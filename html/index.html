@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Города | Task 3</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;load=package.full"></script>
+
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<div id="infoPanel">
+  Для начала игры введите название города в поле...
+</div>
+<div id="container">
+  <div class="side">
+    <div id="enterField">
+      <span id="final_span"></span>
+      <input id="cityInput" placeholder="Ввод..." class="robotoFont" style="font-size:1.5vw">
+      <button class="enterFieldButton" id="start_button" onclick="startButton(event)" style="font-size:1.5vw"><i
+              class="fa fa-microphone"></i></button>
+      <button class="enterFieldButton robotoFont" id="enterCityButton" style="font-size:1.5vw">Ввод</button>
+
+    </div>
+
+    <div id="enteredCitysList">
+      <table class="enteredCitysTable robotoFont">
+        <tr>
+          <td>Город</td>
+          <td>Время</td>
+          <td>Игрок</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="side">
+    <div id="map"></div>
+  </div>
+</div>
+
+<script src="../js/map.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/speach.js"></script>
+</body>
+</html>
+
+
